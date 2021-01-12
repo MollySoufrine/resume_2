@@ -1,0 +1,79 @@
+{
+  "basics": [
+    {
+      "name": "MOLLY SOUFRINE",
+      "label": "Full Stack Web Developer",
+      "email": "mollysoufrine@gmail.com",
+      "phone": "(203) 895-7309",
+      "linkedin": "Linkedin",
+      "github": "Github"
+    }
+  ],
+  "summary": ["React focused", "Client Oriented", "Ambitious problem solver"],
+
+  "address": {
+    "postalCode": "06512",
+    "city": "East Haven",
+    "countryCode": "US",
+    "region": "CT"
+  },
+
+  "work": [
+    {
+      "company": "TN Integrations:",
+      "current": true,
+      "position": "Intern,",
+      "startDate": "October 2020",
+
+      "description": "Assiting Various projects utilizing ES6, PHP, PHPunit, Sass and WordPress.",
+      "highlights": [
+        "Developing responsive web designs for client's companies by incorpating modern tools like: Webpack, Gulp, ESLint, Prettier, Woocommerce and others. ",
+        "Learning to quickly adapt to new concepts and tools to become a more versatile asset. ",
+        "Utilizing PHPunit to build data providers and test our functions where neccessary."
+      ]
+    },
+    {
+      "company": "2U:",
+      "current": true,
+      "position": "Tutor, ",
+
+      "startDate": "December 2020",
+
+      "description": "Contributes to student learning, growth, and advancement.",
+      "highlights": [
+        "Listening and encouraging the student when he or she experiences concerns or struggles. ",
+        "Facilitating problem solving while demonstrating how to use critical thinking skills. ",
+        "Utilizing different teaching strategies depending upon the student."
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Southern Connecitcut State University.",
+      "area": "Exercise Science.",
+      "studyType": "Bahcelors's degree:",
+      "endDate": "Graduated May 2017"
+    },
+    {
+      "institution": "Uconn",
+      "area": "Full Stack Web Development",
+      "studyType": "Certificate",
+      "endDate": "Completed October 2020"
+    }
+  ],
+
+  "skills": [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "React",
+    "Express",
+    "Sass",
+    "Git",
+    "WordPress",
+    "PHP",
+    "MySQL",
+    "Mongoose"
+  ]
+}

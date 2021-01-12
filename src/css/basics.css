@@ -1,0 +1,36 @@
+.basics {
+  display: inline-flex;
+}
+.name {
+  padding-right: 5rem;
+  font-size: 1.3rem;
+}
+.contact {
+  font-size: 1.5rem;
+}
+.basics-container {
+  border-bottom: 0.1rem solid black;
+}
+.pure-button {
+  float: right;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.3rem;
+  color: #090909;
+  /* clear: both; */
+}
+.pure-button:hover {
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: #5e51ef;
+}
+.summary {
+  display: flex;
+  justify-content: center;
+}
+.summary li {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  font-size: 1.2rem;
+}
