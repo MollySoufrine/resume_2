@@ -1,0 +1,82 @@
+/**
+ * Components: Column
+ */
+
+.column {
+  text-align: center;
+  padding: 0.3rem;
+  .title {
+    font-size: 1.3rem;
+    text-decoration: underline;
+  }
+  .education {
+    p {
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+  .second-portion {
+    .skills {
+      li {
+        list-style: none;
+        font-size: 0.8rem;
+      }
+    }
+
+    .experience {
+      margin-right: 0;
+      p {
+        font-size: 0.8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      li {
+        list-style: none;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  @media #{$tablet} {
+    .title {
+      font-size: 2rem;
+      text-decoration: underline;
+    }
+    .education {
+      p {
+        font-size: 1.3rem;
+      }
+    }
+    .second-portion {
+      display: flex;
+
+      .skills {
+        float: left;
+        margin-right: 30%;
+        li {
+          list-style: none;
+          font-size: 1.2rem;
+        }
+      }
+      .experience {
+        float: right;
+        padding-left: 2rem;
+        width: 40%;
+        .work-company {
+          margin: 0rem;
+          font-size: 1.3rem;
+        }
+        .position {
+          margin-top: 0;
+        }
+        p {
+          font-size: 1rem;
+        }
+        li {
+          font-size: 1rem;
+          list-style: none;
+        }
+      }
+    }
+  }
+}

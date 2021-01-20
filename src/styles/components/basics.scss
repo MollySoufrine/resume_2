@@ -1,0 +1,47 @@
+/**
+ * Components: Basics
+ */
+
+.basics {
+  border-bottom: solid 0.1rem black;
+  padding: 0.3rem;
+  text-align: center;
+  .name {
+    font-size: 0.9rem;
+  }
+  .contact {
+    font-size: 0.8rem;
+    a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      padding-top: 0.2rem;
+      color: #a2ad91;
+    }
+  }
+  .summary {
+    list-style: none;
+    font-size: 0.7rem;
+    display: flex;
+  }
+  @media #{$tablet} {
+    .basics {
+      padding-bottom: 2rem;
+    }
+    .name {
+      font-size: 1.8em;
+    }
+    .contact {
+      font-size: 1.5rem;
+      a {
+        font-size: 3rem;
+      }
+      a:hover {
+        font-size: 4rem;
+      }
+    }
+    .summary {
+      display: block;
+      font-size: 1.2rem;
+    }
+  }
+}

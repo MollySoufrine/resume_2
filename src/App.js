@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/App.scss";
 import Container from "react-bootstrap/Container";
 import Basics from "./components/Basics";
 import Columns from "./components/Columns";

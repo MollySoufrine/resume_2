@@ -1,52 +1,45 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+
 import resume from "../resume.json";
-import "../css/column.css";
 
 function Column() {
   return (
-    <Container className="column">
+    <div className="column">
+      <h3 className="title">Education</h3>
+      <div className="education">
+        {resume.education.map((educationInfo) => (
+          <p>
+            {educationInfo.institution} {educationInfo.area}{" "}
+            {educationInfo.studyType} {educationInfo.endDate}
+          </p>
+        ))}
+      </div>
+
       {/* Stack the columns on mobile by making one full-width and the other half-width */}
 
       {/* Columns are always 50% wide, on mobile and desktop */}
-      <Row className="row-one">
-        <Col className="skills" md={4}>
+      <div className="second-portion">
+        <div className="skills">
           <h3 className="title">Technical Skills</h3>
           {resume.skills.map((skills) => (
             <li>{skills}</li>
           ))}
-        </Col>
-        <Col className="experience" md={8}>
+        </div>
+        <div className="experience">
           <h3 className="title">Experience</h3>{" "}
           {resume.work.map((work) => (
             <p>
-              <strong>{work.company}</strong> {work.position} {work.startDate}{" "}
-              <br />
+              <p className="work-company">Company: {work.company}</p>
+              <br /> <p className="position">Position: {work.position}</p> Start
+              Date: {work.startDate} <br />
               {work.description} <br />
-              {work.highlights}{" "}
+              <br />
+              Highlights: <li className="highlights">{work.highlights}</li>
             </p>
           ))}
-        </Col>
-      </Row>
-
-      <Row>
-        <Col className="education">
-          <h3 className="title">Education</h3>
-        </Col>
-      </Row>
-      <Row>
-        <Col lg={12}>
-          {resume.education.map((educationInfo) => (
-            <p className="education-ptag">
-              {educationInfo.institution} {educationInfo.area}{" "}
-              {educationInfo.studyType} {educationInfo.endDate}
-            </p>
-          ))}
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 export default Column;
